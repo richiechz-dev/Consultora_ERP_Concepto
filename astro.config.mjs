@@ -5,7 +5,7 @@ import compress from 'astro-compress';
 // https://astro.build/config
 export default defineConfig({
 
-  site: 'https://conceptoone.github.io',
+  site: 'https://concepto.github.io',
   experimental: {
     viewTransitions: true,
   },
