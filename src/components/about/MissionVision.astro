@@ -1,0 +1,59 @@
+---
+const stats = [
+ 
+  {
+    name: 'Expertos',
+    value: '7',
+  },
+  {
+    name: 'Proyectos',
+    value: '6',
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="grid gap-16 lg:grid-cols-2 lg:gap-24">
+      <img
+        class="mx-auto h-auto w-full max-w-xl rounded-3xl"
+        width="576"
+        height="864"
+        src="/assets/mission.webp"
+        alt="Our experts working together"
+      />
+      <div class="flex flex-col gap-10">
+        <!-- mision descrpcion -->
+        <div class="space-y-8 sm:space-y-12">
+          <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Nuestra Mision</h2>
+          <div class="space-y-6">
+            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+              Nuestra misión en App DT Software es proporcionar soluciones de desarrollo de aplicaciones de alta calidad a pequeñas empresas en el Estado de Hidalgo, Pachuca. Estamos comprometidos en convertir las ideas de nuestros clientes potenciales en realidades tangibles, brindando servicios de desarrollo de software confiables y accesibles. Nos esforzamos por ser la opción preferida para las empresas que desean automatizar sus procesos sin depender de intermediarios y lograr ahorros significativos en costos.
+            </p>
+          </div>
+        </div>
+        <!-- vision descripcion -->
+        <div class="space-y-8 sm:space-y-12">
+          <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Nuestra Visión</h2>
+          <div class="space-y-6">
+            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+              Nuestra visión en App DT Software es convertirnos en un referente en el desarrollo de aplicaciones en el Estado de Hidalgo y sus alrededores. Buscamos ser reconocidos como un equipo de profesionales altamente competentes y confiables en la industria del desarrollo de software. Nos esforzamos por mantenernos actualizados en las últimas tecnologías y tendencias del mercado, y aplicarlas de manera efectiva en nuestros proyectos. Aspiramos a tener una cartera de clientes satisfechos y en constante crecimiento, respaldada por la calidad de nuestras soluciones y la excelencia en el servicio al cliente.
+            </p>
+          </div>
+        </div>
+
+        <!-- tarjetas -->
+        <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {
+            stats.map((stat) => (
+              <div class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border p-6">
+                <dt class="text-base">{stat.name}</dt>
+                <dd class="text-3xl font-medium tracking-tight">{stat.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
